@@ -1,0 +1,5 @@
+{
+  "name": "γ-CALC (Gamma Calculator)",
+  "description": "A precision medical tool for calculating drug infusion rates (γ: μg/kg/min).",
+  "requestFramePermissions": []
+}
