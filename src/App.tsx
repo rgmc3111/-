@@ -185,9 +185,9 @@ export default function App() {
               <div className="bg-gradient-to-br from-brand-400 to-vibrant-400 p-2 rounded-xl shadow-lg shadow-brand-500/20">
                 <Activity className="w-5 h-5 text-white" />
               </div>
-              <div>
-                <span className="text-lg font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-brand-200 to-vibrant-200">γ-CALC</span>
-                <span className="hidden sm:inline-block ml-2 text-[10px] uppercase tracking-widest text-slate-500 font-semibold">Precision Engine</span>
+              <div className="flex items-baseline">
+                <span className="text-xl font-black tracking-tight text-white">γ-CALC</span>
+                <span className="hidden sm:inline-block ml-2 text-[10px] uppercase tracking-widest text-slate-400 font-bold">Precision Engine</span>
               </div>
             </div>
             <div className="flex items-center gap-2">
