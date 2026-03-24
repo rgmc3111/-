@@ -529,16 +529,16 @@ export default function App() {
                           </p>
                         </div>
                       </div>
-                      <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <div className="flex items-center gap-2 transition-opacity">
                         <button 
                           onClick={() => openEditModal(preset)}
-                          className="p-2.5 bg-white text-slate-400 hover:text-brand-600 rounded-xl border border-slate-100 shadow-sm transition-all"
+                          className="p-2.5 bg-slate-100 text-slate-600 hover:text-brand-600 hover:bg-white rounded-xl border border-slate-200 shadow-sm transition-all"
                         >
                           <Settings2 className="w-4 h-4" />
                         </button>
                         <button 
                           onClick={() => deletePreset(preset.id)}
-                          className="p-2.5 bg-white text-slate-400 hover:text-red-500 rounded-xl border border-slate-100 shadow-sm transition-all"
+                          className="p-2.5 bg-slate-100 text-slate-600 hover:text-red-600 hover:bg-white rounded-xl border border-slate-200 shadow-sm transition-all"
                         >
                           <Trash2 className="w-4 h-4" />
                         </button>
