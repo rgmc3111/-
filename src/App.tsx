@@ -400,13 +400,19 @@ export default function App() {
                   <div className={`h-1.5 rounded-full transition-all duration-700 ${mode === 'gamma-to-rate' ? 'bg-gradient-to-r from-brand-500 via-vibrant-400 to-brand-600 w-full shadow-[0_0_20px_rgba(139,92,246,0.4)]' : 'bg-slate-100 w-1/4'}`} />
                 </div>
 
-                {/* Transition Icon */}
+                {/* Transition Icon / Toggle Button */}
                 <div className="flex justify-center">
-                  <div className={`p-4 rounded-full bg-white border-2 transition-all duration-500 shadow-xl ${
-                    mode === 'gamma-to-rate' ? 'border-brand-500 text-brand-500 shadow-brand-500/20' : 'border-vibrant-500 text-vibrant-500 shadow-vibrant-500/20 rotate-180'
-                  }`}>
-                    <ArrowRightLeft className="w-8 h-8" />
-                  </div>
+                  <button
+                    onClick={() => setMode(mode === 'gamma-to-rate' ? 'rate-to-gamma' : 'gamma-to-rate')}
+                    className={`p-4 rounded-full bg-white border-2 transition-all duration-500 shadow-xl hover:scale-110 active:scale-95 group/toggle ${
+                      mode === 'gamma-to-rate' 
+                        ? 'border-brand-500 text-brand-500 shadow-brand-500/20' 
+                        : 'border-vibrant-500 text-vibrant-500 shadow-vibrant-500/20 rotate-180'
+                    }`}
+                    title={mode === 'gamma-to-rate' ? 'Switch to Find γ' : 'Switch to Find Rate'}
+                  >
+                    <ArrowRightLeft className="w-8 h-8 transition-transform" />
+                  </button>
                 </div>
 
                 {/* Rate Input */}
